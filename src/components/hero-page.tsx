@@ -9,6 +9,7 @@ export default function HeroPage() {
         backgroundImage: "url('/bg-3.png')",
         backgroundRepeat: "no-repeat",
       }}
+      id="home"
       className="w-full flex rounded-b-4xl bg-size-[280%] lg:bg-size-[130%] shadow items-center p-2 pt-27 pb-7 md:pt-40 lg:pb-20 justify-center"
     >
       <MaxWidthWrapper className="flex flex-col max-w-220.5! justify-center pb-5 lg:pb-40 items-center ">
