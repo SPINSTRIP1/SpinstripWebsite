@@ -1,14 +1,15 @@
 "use client";
-import { ReactNode } from "react";
+import { ComponentPropsWithoutRef } from "react";
+
+interface MaxWidthWrapperProps extends ComponentPropsWithoutRef<"div"> {
+  className?: string;
+}
 
 const MaxWidthWrapper = ({
   className,
   children,
   ...props
-}: {
-  className?: string;
-  children: ReactNode;
-}) => {
+}: MaxWidthWrapperProps) => {
   return (
     <div
       {...props}
