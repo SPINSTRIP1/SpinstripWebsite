@@ -37,7 +37,7 @@ export default function MeetTheTeam() {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="group bg-black/5 h-56.75 w-56.75 backdrop-blur-3xl p-4 border border-white/80 shadow-lg shadow-white/20 flex gap-x-4 items-center rounded-full transition-all duration-500 ease-out  hover:w-150 hover:h-[284px] hover:pr-15 overflow-hidden cursor-pointer"
+            className="group h-56.75 w-56.75 liquid-glass p-4 flex gap-x-4 items-center rounded-full transition-all duration-500 ease-out  hover:w-150 hover:h-[284px] hover:pr-15 overflow-hidden cursor-pointer"
           >
             <Image
               src={member.image}

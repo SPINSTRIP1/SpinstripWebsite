@@ -14,19 +14,19 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full flex items-center justify-center fixed top-0 left-0 z-50 px-2 md:px-4">
-      <div className="max-w-296 w-full mx-auto flex items-center justify-between bg-primary-accent/40 backdrop-blur-3xl rounded-3xl px-2 md:px-4 py-3 border border-white/30 shadow-lg shadow-black/5 relative">
+    <nav className="w-full flex items-center justify-center fixed top-0 left-0 z-50 px-2 lg:px-4 pt-2">
+      <div className="liquid-glass w-full max-w-296 mx-auto flex items-center justify-between rounded-3xl px-1 md:px-4 py-3 relative">
         {/* Logo */}
         <Image
           src={"/logo.png"}
-          className="w-28 md:w-34.25 h-7 md:h-10.5 object-contain"
+          className="w-28 lg:w-34.25 h-7 lg:h-10.5 object-contain"
           width={300}
           height={100}
           alt="Logo"
         />
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-x-4">
+        <div className="hidden md:flex items-center gap-x-3 lg:gap-x-4">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -36,16 +36,16 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <button className="text-primary font-bold bg-primary-accent rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition">
+          <button className="text-primary text-sm lg:text-base font-bold bg-primary-accent rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition">
             Join Waitlist
           </button>
-          <button className="bg-primary font-bold rounded-3xl px-4 py-2 text-white">
+          <button className="bg-primary text-sm lg:text-base font-bold rounded-3xl px-4 py-2 text-white">
             Download App
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="flex lg:hidden items-center gap-x-1">
+        <div className="flex md:hidden items-center gap-x-1">
           <button className="text-primary text-xs font-semibold bg-primary-accent rounded-3xl px-3 py-2 hover:bg-primary hover:text-white transition">
             Join Waitlist
           </button>
@@ -61,7 +61,7 @@ export default function Navbar() {
             <div className="w-5 h-4 relative flex flex-col justify-between">
               <span
                 className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out origin-center ${
-                  isMenuOpen ? "rotate-45 translate-y-[9px]" : ""
+                  isMenuOpen ? "rotate-45 translate-y-[6.5px]" : ""
                 }`}
               />
               <span
@@ -71,7 +71,7 @@ export default function Navbar() {
               />
               <span
                 className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out origin-center ${
-                  isMenuOpen ? "-rotate-45 -translate-y-[9px]" : ""
+                  isMenuOpen ? "-rotate-45 -translate-y-[6.5px]" : ""
                 }`}
               />
             </div>
@@ -80,13 +80,13 @@ export default function Navbar() {
 
         {/* Mobile Menu Dropdown */}
         <div
-          className={`absolute top-full left-0 right-0 mt-2 bg-primary-accent/90 backdrop-blur-3xl rounded-2xl border border-white/30 shadow-lg shadow-black/10 lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`absolute top-full left-0 right-0 mt-2 liquid-glass-dropdown rounded-2xl md:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
               ? "opacity-100 translate-y-0 visible"
-              : "opacity-0 -translate-y-2 invisible"
+              : "opacity-0 -translate-y-2 invisible pointer-events-none"
           }`}
         >
-          <div className="flex flex-col py-2">
+          <div className="flex flex-col py-2 relative z-10">
             {navLinks.map((link, index) => (
               <a
                 key={link.label}

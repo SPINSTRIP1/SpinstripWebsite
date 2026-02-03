@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function DoingToday() {
   return (
-    <MaxWidthWrapper className="mt-20 overflow-x-hidden">
-      <h1 className="text-5xl text-center md:text-[58px] text-primary-text font-medium">
+    <MaxWidthWrapper className="mt-16 md:mt-20 overflow-x-hidden">
+      <h1 className="text-3xl text-center lg:text-left md:text-5xl lg:text-[58px] text-primary-text font-medium">
         What are you <span className="text-primary">doing</span> today?
       </h1>
-      <p className="text-2xl text-secondary-text text-pretty text-center md:text-left md:w-[85%] mt-2 mb-7">
+      <p className="text-base md:text-xl lg:text-2xl text-secondary-text text-pretty text-center lg:text-left w-full mx-auto lg:mx-0 max-w-[85%] mt-2 mb-7">
         SpinStrip is your go-to for discovering what to do, where to go, and who
         to go with. Your lifestyle companion in one app.
       </p>
-      <div className="flex flex-col md:flex-row gap-3">
+      <div className="lg:flex grid md:grid-cols-2 flex-row gap-3">
         <div className="bg-primary-accent rounded-3xl min-w-71.75 p-3 h-114.5">
           <div className=" bg-primary-accent/60 backdrop-blur-3xl rounded-2xl px-3 py-1 border border-white/70 shadow-lg shadow-white/20">
             <h2 className="text-xl text-primary-text font-bold text-center md:text-left">
@@ -27,8 +27,8 @@ export default function DoingToday() {
             height={500}
           />
         </div>
-        <div className="bg-foreground rounded-3xl min-w-71.75 p-3 h-89.75 flex flex-col justify-between">
-          <div className=" bg-white/80 backdrop-blur-3xl rounded-2xl px-3 py-1 border border-foreground/70 shadow-lg shadow-white/60">
+        <div className="bg-foreground rounded-3xl min-w-71.75 p-3 h-100 lg:h-89.75 flex flex-col justify-between">
+          <div className="liquid-glass rounded-2xl px-3 py-1">
             <h2 className="text-xl text-primary-text font-bold text-center md:text-left">
               Discover Places / Vendors
             </h2>

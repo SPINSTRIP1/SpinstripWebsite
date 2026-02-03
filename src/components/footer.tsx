@@ -104,12 +104,11 @@ export default function Footer() {
         style={{
           backgroundImage: "url('/bg-2.png')",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "115%",
           backgroundColor: "#FFFFFF",
         }}
-        className="flex mx-auto max-w-296 rounded-3xl md:pl-20 md:p-0 p-5 justify-between"
+        className="flex mx-auto w-full lg:max-w-296 md:bg-size-[205%] lg:bg-size-[115%] rounded-3xl lg:pl-20 md:p-0 md:pl-5 p-5 justify-between"
       >
-        <div className="max-w-130.25 flex flex-col justify-between h-auto pt-10 pb-5">
+        <div className="lg:max-w-130.25 flex flex-col justify-between h-auto pt-10 pb-5">
           <div>
             <h1 className="text-4xl md:text-[48px] leading-[120%] text-primary-text font-medium">
               Get early access to the future of city life
@@ -171,7 +170,7 @@ export default function Footer() {
         </div>
         <Image
           src={"/32.png"}
-          className="w-155.25 h-113.25 hidden md:inline-block object-cover"
+          className="lg:w-155.25 lg:h-113.25 w-120 h-80 hidden md:inline-block object-cover"
           alt="Phones"
           width={900}
           height={500}
@@ -182,7 +181,7 @@ export default function Footer() {
           backgroundImage: "url('/bg1.png')",
           backgroundRepeat: "no-repeat",
         }}
-        className="pt-12 pb-6 bg-size-[600%] lg:bg-size-[200%] mt-20"
+        className="pt-12 pb-6 bg-size-[600%] lg:bg-size-[200%]"
       >
         <MaxWidthWrapper>
           <div className="flex flex-col md:flex-row gap-y-10 justify-between">
