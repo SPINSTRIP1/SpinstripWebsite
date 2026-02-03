@@ -5,7 +5,6 @@ import MeetTheTeam from "@/components/meet-the-team";
 import Navbar from "@/components/navbar";
 import WhoWeAre from "@/components/who-we-are";
 
-//Home page
 export default function Home() {
   return (
     <>
