@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#", label: "Home" },
+    { href: "#home", label: "Home" },
     { href: "#features", label: "Features" },
     { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
@@ -37,13 +37,15 @@ export default function Navbar() {
     <nav className="w-full flex items-center justify-center fixed top-0 left-0 z-50 px-2 lg:px-4 pt-2">
       <div className="liquid-glass w-full max-w-296 mx-auto flex items-center justify-between rounded-3xl px-1 md:px-4 py-3 relative">
         {/* Logo */}
-        <Image
-          src={"/logo.png"}
-          className="w-28 lg:w-34.25 h-7 lg:h-10.5 object-contain"
-          width={300}
-          height={100}
-          alt="Logo"
-        />
+        <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
+          <Image
+            src={"/logo.png"}
+            className="w-28 lg:w-34.25 h-7 lg:h-10.5 object-contain"
+            width={300}
+            height={100}
+            alt="Logo"
+          />
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-x-3 lg:gap-x-4">
