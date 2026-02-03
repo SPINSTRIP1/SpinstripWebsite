@@ -106,6 +106,7 @@ export default function Footer() {
           backgroundRepeat: "no-repeat",
           backgroundColor: "#FFFFFF",
         }}
+        id="contact-us"
         className="flex mx-auto w-full lg:max-w-296 md:bg-size-[205%] lg:bg-size-[115%] rounded-3xl lg:pl-20 md:p-0 md:pl-5 p-5 justify-between"
       >
         <div className="lg:max-w-130.25 flex flex-col justify-between h-auto pt-10 pb-5">

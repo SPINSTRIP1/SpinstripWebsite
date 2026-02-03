@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DoingToday() {
   return (
-    <MaxWidthWrapper className="mt-16 md:mt-20 overflow-x-hidden">
+    <MaxWidthWrapper id="features" className="mt-16 md:mt-20 overflow-x-hidden">
       <h1 className="text-3xl text-center lg:text-left md:text-5xl lg:text-[58px] text-primary-text font-medium">
         What are you <span className="text-primary">doing</span> today?
       </h1>
