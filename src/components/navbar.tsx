@@ -121,7 +121,6 @@ export default function Navbar() {
                 style={{
                   transitionDelay: isMenuOpen ? `${index * 50}ms` : "0ms",
                 }}
-                onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </a>
