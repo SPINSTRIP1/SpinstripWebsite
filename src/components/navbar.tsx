@@ -8,10 +8,30 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "#", label: "Home" },
-    { href: "#", label: "Features" },
-    { href: "#", label: "About Us" },
-    { href: "#", label: "Contact Us" },
+    { href: "#features", label: "Features" },
+    { href: "#about-us", label: "About Us" },
+    { href: "#contact-us", label: "Contact Us" },
   ];
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        const navbarHeight = 80; // Offset for fixed navbar
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - navbarHeight,
+          behavior: "smooth",
+        });
+        setIsMenuOpen(false);
+      }
+    }
+  };
 
   return (
     <nav className="w-full flex items-center justify-center fixed top-0 left-0 z-50 px-2 lg:px-4 pt-2">
@@ -31,6 +51,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="hover:text-primary transition"
             >
               {link.label}
@@ -91,6 +112,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className={`px-6 py-3 hover:bg-white/10 transition-all duration-300 ${
                   isMenuOpen
                     ? "opacity-100 translate-x-0"
