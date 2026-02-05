@@ -118,7 +118,7 @@ export default function Footer() {
               Be among the first to explore, book, and pay — all in one app
               built for urban explorers.
             </p>
-            <div className="bg-white/40 backdrop-blur-2xl rounded-3xl md:w-[323px] py-1 px-2 border border-white/70 shadow-lg shadow-white/30 flex gap-x-4 ">
+            <div className="liquid-glass rounded-3xl md:w-[323px] py-1 px-2 border border-white/70 shadow-lg shadow-white/30 flex gap-x-4 ">
               <input
                 placeholder="Enter your Email"
                 className="w-full h-full flex-1 pt-2 outline-none bg-transparent text-sm text-primary-text placeholder:text-secondary-text"
@@ -141,7 +141,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-          <div className="flex items-center gap-x-4 mt-4">
+          <div className="flex items-center gap-x-4 mt-6 md:mt-4">
             <Image
               src={"/logo.png"}
               className="w-27 md:w-28.25 h-8 md:h-8.75  object-contain"
@@ -266,7 +266,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Features
                     </a>
@@ -274,7 +274,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       About Us
                     </a>
@@ -282,7 +282,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       The Team
                     </a>
@@ -290,7 +290,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Join Waitlist
                     </a>
@@ -298,7 +298,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       FAQ
                     </a>
@@ -315,7 +315,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Discover Places
                     </a>
@@ -323,7 +323,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Strippay Wallet
                     </a>
@@ -331,7 +331,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Deals & Discounts
                     </a>
@@ -339,7 +339,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Connect with Friends
                     </a>
@@ -347,7 +347,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       Shop the Moment
                     </a>
@@ -361,14 +361,16 @@ export default function Footer() {
                   Contact us
                 </h4>
                 <ul className="space-y-3">
-                  <li className="text-neutral-accent">
+                  <li className="text-white md:text-neutral-accent">
                     1E Sinari Daranjo, Lagos Nigeria
                   </li>
-                  <li className="text-neutral-accent">+234 123 456 7890</li>
+                  <li className="text-white md:text-neutral-accent">
+                    +234 123 456 7890
+                  </li>
                   <li>
                     <a
                       href="mailto:hello@spinstrip.com"
-                      className="text-neutral-accent hover:text-white transition"
+                      className="text-white md:text-neutral-accent hover:text-white transition"
                     >
                       hello@spinstrip.com
                     </a>
@@ -380,20 +382,20 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row items-center justify-between mt-20 pt-6 border-t border-white/20">
-            <p className="text-white/50 text-sm">
+            <p className="text-white md:text-neutral-accent text-sm">
               Copyright © 2025. All rights reserved &nbsp;|&nbsp; SpinStrip
             </p>
             <div className="flex items-center gap-x-4">
               <a
                 href="#"
-                className="text-white/50 hover:text-white transition text-sm"
+                className="text-white md:text-neutral-accent hover:text-white transition text-sm"
               >
                 Privacy Policy
               </a>
-              <span className="text-white/50">|</span>
+              <span className="text-white md:text-neutral-accent">|</span>
               <a
                 href="#"
-                className="text-white/50 hover:text-white transition text-sm"
+                className="text-white md:text-neutral-accent hover:text-white transition text-sm"
               >
                 Terms & Conditions
               </a>
