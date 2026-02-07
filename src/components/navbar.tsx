@@ -54,7 +54,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="hover:text-primary transition"
+              className="hover:text-primary font-medium transition"
             >
               {link.label}
             </a>
@@ -115,7 +115,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`px-6 py-3 hover:bg-white/10 transition-all duration-300 ${
+                className={`px-6 py-3 hover:bg-white/10s transition-all duration-300 ${
                   isMenuOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-4"
