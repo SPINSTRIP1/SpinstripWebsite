@@ -2,6 +2,109 @@ import React from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import Image from "next/image";
 
+const cards = [
+  {
+    id: 1,
+    title: "Unbelievable Discounts & Deals",
+    description:
+      "SpinStrip doesn't just find you experiences — it finds you the best version of them. Think 20% off that spa day or a flash deal for your favourite food vendor. Flash sales. Drop-ins. That thing you bookmarked last week? It's 30% off now.",
+    image: "/58.png",
+    bgColor: "bg-primary-accent",
+    glassStyle: "card-glass",
+    titleColor: "text-primary-text",
+    textColor: "text-secondary-text",
+    imageHeight: "h-[80%]",
+  },
+  {
+    id: 2,
+    title: "Discover Places / Vendors",
+    description:
+      "From brunch spots to your next summer vacation; Find and book hidden gems, trending hangouts, and the vendors your city's been raving about. Experiences curated just for you, based on where you are and what you love.",
+    image: "/56.png",
+    bgColor: "bg-foreground",
+    glassStyle: "card-glass",
+    titleColor: "text-primary-text",
+    textColor: "text-secondary-text",
+    imageHeight: "h-[80%]",
+  },
+  {
+    id: 3,
+    title: "Share Experiences",
+    description:
+      "From food pics to dance videos — your story's more fun when you live it and share it; capture and share it all on your Strip Feed. SpinStrip lets you share your day the way it happened. Your weekend recap deserves more than a disappearing story.",
+    image: "/29.png",
+    bgColor: "bg-[#9E76F8]",
+    glassStyle: "card-glass-purple",
+    titleColor: "text-primary-accent",
+    textColor: "text-primary-accent/80",
+    imageHeight: "h-[87%]",
+  },
+  {
+    id: 4,
+    title: "Ecommerce",
+    description:
+      "SpinStrip isn't just where you find your next meal, massage, or flight — it's where you shop the moment too. Need those sneakers you saw at brunch? That bag from a local vendor? Search for it. Shop it. Get it delivered fast.",
+    image: "/11.png",
+    bgColor: "bg-primary-accent",
+    glassStyle: "card-glass",
+    titleColor: "text-primary-text",
+    textColor: "text-secondary-text",
+    imageHeight: "h-[86%]",
+  },
+  {
+    id: 5,
+    title: "Found It? Booked It? Pay In Seconds",
+    description:
+      "Pay for everything — from facials to food trucks — right in the app, pay in a tap with your Pay strip wallet, card, or QR. No network issues. No awkward transfers. No broken links.",
+    image: "/76.png",
+    bgColor: "bg-[#9E76F8]",
+    glassStyle: "card-glass-purple",
+    titleColor: "text-primary-accent",
+    textColor: "text-primary-accent/80",
+    imageHeight: "h-[80%]",
+  },
+  {
+    id: 6,
+    title: "Connect with Friends & Meet New People",
+    description:
+      "Pay for everything — from facials to food trucks — right in the app, pay in a tap with your Pay strip wallet, card, or QR. No network issues. No awkward transfers. No broken links.",
+    image: "/79.png",
+    bgColor: "bg-foreground",
+    glassStyle: "card-glass",
+    titleColor: "text-primary-text",
+    textColor: "text-secondary-text",
+    imageHeight: "h-[80%]",
+  },
+];
+
+function Card({ card }: { card: (typeof cards)[0] }) {
+  return (
+    <div
+      className={`group ${card.bgColor} rounded-3xl min-w-[287px] w-[287px] md:min-w-[320px] md:w-[320px] p-3 h-[458px] overflow-hidden transition-all duration-500 ease-in-out hover:h-[550px] flex-shrink-0`}
+    >
+      <div className={`${card.glassStyle} rounded-2xl px-3 py-1`}>
+        <h2
+          className={`relative z-10 text-lg md:text-xl ${card.titleColor} font-bold`}
+        >
+          {card.title}
+        </h2>
+        <p
+          className={`relative z-10 md:text-lg ${card.textColor} max-h-0 overflow-hidden opacity-0 group-hover:max-h-57 group-hover:opacity-100 group-hover:mt-2 transition-all duration-500 ease-in-out`}
+        >
+          {card.description}
+        </p>
+      </div>
+      <Image
+        src={card.image}
+        className={`w-full ${card.imageHeight} mt-4 object-contain transition-all duration-500 ease-in-out`}
+        alt={card.title}
+        width={900}
+        height={500}
+      />
+    </div>
+  );
+}
+
 export default function DoingToday() {
   return (
     <MaxWidthWrapper id="features" className="mt-16 md:mt-20 overflow-x-hidden">
@@ -12,88 +115,21 @@ export default function DoingToday() {
         SpinStrip is your go-to for discovering what to do, where to go, and who
         to go with. Your lifestyle companion in one app.
       </p>
-      <div className="lg:flex grid md:grid-cols-2 flex-row gap-3">
-        <div className="group bg-primary-accent rounded-3xl min-w-71.75 p-3 h-114.5 overflow-hidden transition-all duration-500 ease-in-out hover:h-150">
-          <div className=" bg-primary-accent/60 backdrop-blur-3xl rounded-2xl px-3 py-1 border border-white/70 shadow-lg shadow-white/20">
-            <h2 className="text-xl text-primary-text font-bold text-center md:text-left">
-              Unbelievable Discounts & Deals
-            </h2>
-            <p className="text-lg text-secondary-text max-h-0 overflow-hidden opacity-0 group-hover:max-h-57 group-hover:opacity-100 group-hover:mt-2 transition-all duration-500 ease-in-out">
-              SpinStrip doesn&apos;t just find you experiences — it finds you
-              the best version of them. Think 20% off that spa day or a flash
-              deal for your favourite food vendor. Flash sales. Drop-ins. That
-              thing you bookmarked last week? It&apos;s 30% off now.
-            </p>
-          </div>
-          <Image
-            src={"/58.png"}
-            className="w-full h-[80%] mt-4 object-contain transition-all duration-500 ease-in-out"
-            alt="Phones"
-            width={900}
-            height={500}
-          />
-        </div>
-        <div className="group bg-foreground rounded-3xl min-w-71.75 p-3 h-100 lg:h-89.75 overflow-hidden transition-all duration-500 ease-in-out hover:h-112.5 lg:hover:h-125s flex flex-col justify-between">
-          <div className="liquid-glass rounded-2xl px-3 py-1">
-            <h2 className="text-xl text-primary-text font-bold text-center md:text-left">
-              Discover Places / Vendors
-            </h2>
-            <p className="text-lg text-secondary-text max-h-0 overflow-hidden opacity-0 group-hover:max-h-57 group-hover:opacity-100 group-hover:mt-2 transition-all duration-500 ease-in-out">
-              From brunch spots to your next summer vacation; Find and book
-              hidden gems, trending hangouts, and the vendors your city&apos;s
-              been raving about. Experiences curated just for you, based on
-              where you are and what you love.
-            </p>
-          </div>
-          <Image
-            src={"/56.png"}
-            className="w-full h-51.25 mt-4 object-contain transition-all duration-500 ease-in-out"
-            alt="Phones"
-            width={900}
-            height={500}
-          />
-        </div>
-        <div className="group bg-[#9E76F8] rounded-3xl min-w-71.75 p-3 h-114.5 overflow-hidden transition-all duration-500 ease-in-out hover:h-150">
-          <div className=" bg-[#9E76F8]/60 backdrop-blur-3xl rounded-2xl px-3 py-1 border border-white/40 shadow-lg shadow-primary-accent/10">
-            <h2 className="text-xl text-primary-accent font-bold text-center md:text-left">
-              Share Experiences
-            </h2>
-            <p className="text-lg text-primary-accent/80 max-h-0 overflow-hidden opacity-0 group-hover:max-h-57 group-hover:opacity-100 group-hover:mt-2 transition-all duration-500 ease-in-out">
-              From food pics to dance videos — your story&apos;s more fun when
-              you live it and share it; capture and share it all on your Strip
-              Feed. SpinStrip lets you share your day the way it happened. Your
-              weekend recap deserves more than a disappearing story.
-            </p>
-          </div>
-          <Image
-            src={"/29.png"}
-            className="w-full h-[87%] mt-4 object-contain transition-all duration-500 ease-in-out"
-            alt="Phones"
-            width={900}
-            height={500}
-          />
-        </div>
-        <div className="group bg-primary-accent rounded-3xl min-w-71.75 p-3 h-114.5 overflow-hidden transition-all duration-500 ease-in-out hover:h-150">
-          <div className=" bg-primary-accent/60 backdrop-blur-3xl rounded-2xl px-3 py-1 border border-white/70 shadow-lg shadow-white/20">
-            <h2 className="text-xl text-primary-text font-bold text-center md:text-left">
-              Ecommerce
-            </h2>
-            <p className="text-lg text-secondary-text max-h-0 overflow-hidden opacity-0 group-hover:max-h-57 group-hover:opacity-100 group-hover:mt-2 transition-all duration-500 ease-in-out">
-              SpinStrip isn&apos;t just where you find your next meal, massage,
-              or flight — it&apos;s where you shop the moment too. Need those
-              sneakers you saw at brunch? That bag from a local vendor? Search
-              for it. Shop it. Get it delivered fast.
-            </p>
-          </div>
-          <Image
-            src={"/11.png"}
-            className="w-full h-[86%] mt-4 object-contain transition-all duration-500 ease-in-out"
-            alt="Phones"
-            width={900}
-            height={500}
-          />
+
+      {/* Infinite Carousel */}
+      <div className="carousel-container w-full">
+        <div className="carousel-track">
+          {/* First set of cards */}
+          {cards.map((card) => (
+            <Card key={`first-${card.id}`} card={card} />
+          ))}
+          {/* Duplicate set for seamless infinite scroll */}
+          {cards.map((card) => (
+            <Card key={`second-${card.id}`} card={card} />
+          ))}
         </div>
       </div>
+
       <div className="flex items-center py-12 justify-center gap-x-5">
         <button className="text-primary w-92 cursor-pointer font-bold bg-primary-accent transition-colors duration-300 ease-in-out rounded-3xl px-4 py-2 hover:bg-primary hover:text-white">
           Download the App
