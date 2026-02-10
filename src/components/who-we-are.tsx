@@ -9,7 +9,7 @@ export default function WhoWeAre() {
         backgroundRepeat: "no-repeat",
       }}
       id="about-us"
-      className="w-full group bg-size-[360%] lg:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
+      className="w-full group bg-size-[450%] lg:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
     >
       <div className="flex flex-col pb-8 md:pb-30">
         <div className="flex items-center justify-between">
@@ -29,13 +29,13 @@ export default function WhoWeAre() {
             </h2>
           </div>
         </div>{" "}
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white duration-500 transition-colors ease-linear  text-sm lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl md:hover:text-3xl text-white lg:text-secondary-text hover:text-white duration-500 transition-all ease-linear  text-sm lg:max-w-149.5 mt-4">
           SpinStrip was born from a simple but powerful belief — that life
           isn&apos;t meant to be scrolled past or lost in group chats that lead
           nowhere. We believe experiences shouldn&apos;t be hard to find,
           impossible to plan, or scattered across a dozen apps.
         </p>
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white duration-500 transition-colors ease-linear  text-sm lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl md:hover:text-3xl text-white lg:text-secondary-text hover:text-white duration-500 transition-all ease-linear  text-sm lg:max-w-149.5 mt-4">
           SpinStrip is your all-in-one lifestyle companion — a super app where
           discovery, booking, payment, connection, and sharing come together.
           Whether it&apos;s a food spot tucked away in your neighborhood, a
@@ -43,7 +43,7 @@ export default function WhoWeAre() {
           to be booked — SpinStrip makes it effortless to find, enjoy, and live
           your best moments.
         </p>
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white duration-500 transition-colors ease-linear  text-sm lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl md:hover:text-3xl text-white lg:text-secondary-text hover:text-white duration-500 transition-all ease-linear  text-sm lg:max-w-149.5 mt-4">
           We&apos;re not just here to list places. We&apos;re here to transform
           how people experience the world around them — to turn ordinary days
           into unforgettable stories, and local cities into global playgrounds
@@ -73,7 +73,7 @@ export default function WhoWeAre() {
       </div>
       <Image
         src={"/hand-big.png"}
-        className="w-141.75  h-130 xl:w-161.75 xl:h-130 group-hover:scale-125 transition-transform duration-300 ease-in-out absolute hidden lg:block bottom-0 -left-56 object-contain"
+        className="w-141.75  h-130 xl:w-200.75 xl:h-170 group-hover:scale-125 transition-transform duration-300 ease-in-out absolute hidden lg:block bottom-0 -left-56 xl:-left-78 object-contain"
         alt="Phones"
         width={900}
         height={500}
