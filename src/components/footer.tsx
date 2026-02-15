@@ -59,6 +59,7 @@ export default function Footer() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
+                style={{ height: openIndex === index ? "100%" : 51 }}
                 className="bg-foreground backdrop-blur-xl rounded-3xl border border-white/50 shadow-sm overflow-hidden"
               >
                 <button
