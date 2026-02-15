@@ -50,11 +50,11 @@ export default function WhoWeAre() {
         backgroundRepeat: "no-repeat",
       }}
       id="about-us"
-      className="w-full group bg-size-[450%] h-[904px] lg:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
+      className="w-full group bg-size-[450%] lg:h-226 lg:bg-size-[300%] xl:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
     >
       <div className="flex flex-col pb-8 md:pb-30">
         <div className="flex items-center justify-between">
-          <h1 className="text-5xl md:text-[58px] text-foreground font-medium">
+          <h1 className="text-4xl md:text-[58px] text-foreground font-medium">
             Who we are
           </h1>
           <div className="flex flex-col items-center gap-y-2 overflow-hidden">
@@ -65,26 +65,27 @@ export default function WhoWeAre() {
                   : "translate-y-0 opacity-100"
               }`}
             >
-              <div className="border-2 border-[#C8C8C8] rounded-full p-2 ">
+              <div className="border-2 border-white rounded-full p-3 ">
                 <HugeiconsIcon
                   icon={options[currentOption].icon}
                   size={28}
-                  color={"#C8C8C8"}
+                  strokeWidth={2.0}
+                  color={"#ffffff"}
                 />
               </div>
-              <h2 className="font-semibold text-xs md:text-sm text-white md:text-[#C8C8C8]">
+              <h2 className="font-semibold text-xs md:text-sm text-white">
                 {options[currentOption].title}
               </h2>
             </div>
           </div>
         </div>{" "}
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
           SpinStrip was born from a simple but powerful belief — that life
           isn&apos;t meant to be scrolled past or lost in group chats that lead
           nowhere. We believe experiences shouldn&apos;t be hard to find,
           impossible to plan, or scattered across a dozen apps.
         </p>
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
           SpinStrip is your all-in-one lifestyle companion — a super app where
           discovery, booking, payment, connection, and sharing come together.
           Whether it&apos;s a food spot tucked away in your neighborhood, a
@@ -92,7 +93,7 @@ export default function WhoWeAre() {
           to be booked — SpinStrip makes it effortless to find, enjoy, and live
           your best moments.
         </p>
-        <p className="md:text-2xl text-white lg:text-secondary-text hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
+        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
           We&apos;re not just here to list places. We&apos;re here to transform
           how people experience the world around them — to turn ordinary days
           into unforgettable stories, and local cities into global playgrounds
@@ -122,7 +123,7 @@ export default function WhoWeAre() {
       </div>
       <Image
         src={"/hand-big.png"}
-        className="w-141.75  h-130 xl:w-240.75 xl:h-190 group-hover:scale-125 transition-transform duration-300 ease-in-out absolute hidden lg:block bottom-0 -left-56 xl:-left-108 object-contain"
+        className="w-161.75  h-150 xl:w-240.75 xl:h-190 group-hover:scale-125 transition-transform duration-300 ease-in-out absolute hidden lg:block bottom-0 -left-66 xl:-left-108 object-contain"
         alt="Phones"
         width={900}
         height={500}

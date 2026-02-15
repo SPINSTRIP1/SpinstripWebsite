@@ -124,12 +124,13 @@ export default function PhoneCarousel() {
     <div className="relative w-full flex items-center justify-center h-52 md:h-108.75">
       {PHONE_IMAGES.map((src, imageIdx) => (
         <div key={imageIdx} className="absolute" style={getStyle(imageIdx)}>
-          <img
+          <Image
             src={src}
             alt={`App screen ${imageIdx + 1}`}
             width={280}
             height={560}
             className="w-28 md:w-48 lg:w-56 h-auto object-contain rounded-2xl md:rounded-3xl drop-shadow-2xl"
+            priority
           />
         </div>
       ))}

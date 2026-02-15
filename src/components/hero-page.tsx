@@ -26,11 +26,11 @@ export default function HeroPage() {
   return (
     <section
       style={{
-        backgroundImage: "url('/bg-3.png')",
-        backgroundRepeat: "no-repeat",
+        background:
+          "linear-gradient(90deg, #CCBAF5 0%, #EBE2FF 15%, #E6DAEA2B 35%, #E6DAEA2B 65%, #EBE2FF 85%, #CCBAF5 100%)",
       }}
       id="home"
-      className="w-full flex rounded-b-4xl bg-size-[280%] lg:bg-size-[130%] shadow items-center p-2 pt-27 pb-7 md:pt-40 lg:pb-20 justify-center"
+      className="w-full flex rounded-b-4xl shadow items-center p-2 pt-27 pb-7 md:pt-40 lg:pb-20 justify-center"
     >
       <MaxWidthWrapper className="flex flex-col max-w-220.5! justify-center pb-5 lg:pb-40 items-center ">
         <h1 className="text-5xl text-center flex flex-col md:flex-row items-center gap-x-2 lg:text-[64px] text-primary-text font-medium">

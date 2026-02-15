@@ -29,7 +29,7 @@ const testimonials = [
 export default function MeetTheTeam() {
   return (
     <MaxWidthWrapper className="md:mt-20 overflow-x-hidden">
-      <h1 className="text-5xl text-center md:text-left md:text-[58px] text-primary-text font-medium">
+      <h1 className="text-4xl text-center md:text-left md:text-[58px] text-primary-text font-medium">
         What our users say
       </h1>
       <p className="text-center md:text-left text-xl md:text-2xl text-secondary-text text-pretty md:w-[85%] mt-2 mb-7">
