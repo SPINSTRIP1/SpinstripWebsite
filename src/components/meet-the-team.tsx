@@ -32,7 +32,7 @@ export default function MeetTheTeam() {
       <h1 className="text-4xl text-center md:text-left md:text-[58px] text-primary-text font-medium">
         What our users say
       </h1>
-      <p className="text-center md:text-left text-xl md:text-2xl text-secondary-text text-pretty md:w-[85%] mt-2 mb-7">
+      <p className="text-center md:text-left text-xl md:text-2xl text-secondary-text text-pretty w-full md:w-[85%] mt-2 mb-7">
         Don&apos;t just take our word for it — hear from the people who use
         SpinStrip to level up their lifestyle every day.
       </p>
