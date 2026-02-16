@@ -48,7 +48,7 @@ export default function Footer() {
     <>
       <section className="bg-linear-to-b  rounded-t-4xl pt-10 pb-14 mt-20 from-[#CCBAF5] via-[#E3D7F9] to-[#F8F8F8] to-98%">
         <MaxWidthWrapper>
-          <h1 className="text-4xl text-center md:text-left md:text-[58px] text-primary-text font-medium">
+          <h1 className="text-4xl mb-1 text-center md:text-left md:text-[58px] text-primary-text font-medium">
             You got questions?
           </h1>
           <p className="text-xl text-center md:text-left md:text-2xl text-secondary-text text-pretty mb-7">
@@ -59,6 +59,7 @@ export default function Footer() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
+                style={{ height: openIndex === index ? "100%" : 51 }}
                 className="bg-foreground backdrop-blur-xl rounded-3xl border border-white/50 shadow-sm overflow-hidden"
               >
                 <button
@@ -386,8 +387,9 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row items-center justify-between mt-20 pt-6 border-t border-white/20">
-            <p className="text-white md:text-neutral-accent text-sm">
-              Copyright © 2025. All rights reserved &nbsp;|&nbsp; SpinStrip
+            <p className="text-white text-sm">
+              Copyright © {new Date().getFullYear()}. All rights reserved
+              &nbsp;|&nbsp; SpinStrip
             </p>
             <div className="flex items-center gap-x-4">
               <a
