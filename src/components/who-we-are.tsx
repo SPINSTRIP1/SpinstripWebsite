@@ -50,7 +50,7 @@ export default function WhoWeAre() {
         backgroundRepeat: "no-repeat",
       }}
       id="about-us"
-      className="w-full group bg-size-[450%] lg:h-226 lg:bg-size-[300%] xl:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
+      className="w-full group bg-size-[550%] lg:h-226 lg:bg-size-[300%] xl:bg-size-[200%] rounded-4xl lg:max-w-340 lg:mx-auto relative overflow-hidden mb-20 shadow lg:flex justify-end p-5 md:p-10 items-end"
     >
       <div className="flex flex-col pb-8 md:pb-30">
         <div className="flex items-center justify-between">
