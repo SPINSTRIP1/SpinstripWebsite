@@ -60,9 +60,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <button className="text-primary text-sm lg:text-base font-bold bg-primary-accent rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition">
+          {/* <button className="text-primary text-sm lg:text-base font-bold bg-primary-accent rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition">
             Join Waitlist
-          </button>
+          </button> */}
           <button className="bg-primary text-sm lg:text-base font-bold rounded-3xl px-4 py-2 text-white">
             Download App
           </button>
@@ -70,9 +70,9 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         <div className="flex md:hidden items-center gap-x-1">
-          <button className="text-primary text-xs font-semibold bg-primary-accent rounded-3xl px-3 py-2 hover:bg-primary hover:text-white transition">
+          {/* <button className="text-primary text-xs font-semibold bg-primary-accent rounded-3xl px-3 py-2 hover:bg-primary hover:text-white transition">
             Join Waitlist
-          </button>
+          </button> */}
           <button className="bg-primary text-xs font-semibold rounded-3xl px-3 py-2 text-white">
             Download App
           </button>
