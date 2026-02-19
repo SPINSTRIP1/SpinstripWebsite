@@ -18,7 +18,8 @@ export const CREATORS_TITLES: string[] = [
 
 export const BUSINESS_TITLES: string[] = [
   "your customers now",
-  "what's trending in your industry",
+
   "nearby customer searches",
-  "brand visibility and positioning  ",
+  "industry trends",
+  "your brand's reach",
 ];
