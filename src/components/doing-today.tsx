@@ -3,89 +3,27 @@
 import React, { useState, useRef, useEffect } from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import Image from "next/image";
+import { EVERYONE_CARDS } from "@/constants";
 
-const cards = [
-  {
-    id: 1,
-    title: "Unbelievable Discounts & Deals",
-    description:
-      "SpinStrip doesn't just find you experiences — it finds you the best version of them. Think 20% off that spa day or a flash deal for your favourite food vendor. Flash sales. Drop-ins. That thing you bookmarked last week? It's 30% off now.",
-    image: "/58.png",
-    bgColor: "bg-primary-accent",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
-  },
-  {
-    id: 2,
-    title: "Discover Places / Vendors",
-    description:
-      "From brunch spots to your next summer vacation; Find and book hidden gems, trending hangouts, and the vendors your city's been raving about. Experiences curated just for you, based on where you are and what you love.",
-    image: "/56.png",
-    bgColor: "bg-foreground",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
-  },
-  {
-    id: 3,
-    title: "Share Experiences",
-    description:
-      "From food pics to dance videos — your story's more fun when you live it and share it; capture and share it all on your Strip Feed. SpinStrip lets you share your day the way it happened. Your weekend recap deserves more than a disappearing story.",
-    image: "/29.png",
-    bgColor: "bg-[#9E76F8]",
-    glassStyle: "card-glass-purple",
-    titleColor: "text-primary-accent",
-    textColor: "text-primary-accent/80",
-    imageHeight: "h-[87%]",
-  },
-  {
-    id: 4,
-    title: "Ecommerce",
-    description:
-      "SpinStrip isn't just where you find your next meal, massage, or flight — it's where you shop the moment too. Need those sneakers you saw at brunch? That bag from a local vendor? Search for it. Shop it. Get it delivered fast.",
-    image: "/11.png",
-    bgColor: "bg-primary-accent",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[86%]",
-  },
-  {
-    id: 5,
-    title: "Found It? Booked It? Pay In Seconds",
-    description:
-      "Pay for everything — from facials to food trucks — right in the app, pay in a tap with your Pay strip wallet, card, or QR. No network issues. No awkward transfers. No broken links.",
-    image: "/76.png",
-    bgColor: "bg-[#9E76F8]",
-    glassStyle: "card-glass-purple",
-    titleColor: "text-primary-accent",
-    textColor: "text-primary-accent/80",
-    imageHeight: "h-[80%]",
-  },
-  {
-    id: 6,
-    title: "Connect with Friends & Meet New People",
-    description:
-      "Pay for everything — from facials to food trucks — right in the app, pay in a tap with your Pay strip wallet, card, or QR. No network issues. No awkward transfers. No broken links.",
-    image: "/79.png",
-    bgColor: "bg-foreground",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
-  },
-];
+export interface Card {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  bgColor: string;
+  glassStyle: string;
+  titleColor: string;
+  textColor: string;
+  imageHeight: string;
+}
 
 {
   /* Desktop card – hover to reveal description */
 }
-function DesktopCard({ card }: { card: (typeof cards)[0] }) {
+function DesktopCard({ card }: { card: Card }) {
   return (
     <div
-      className={`group ${card.bgColor} rounded-3xl min-w-[320px] w-[320px] p-3 h-[458px] overflow-hidden transition-all duration-500 ease-in-out hover:h-[550px] flex-shrink-0`}
+      className={`group ${card.bgColor} rounded-3xl min-w-[320px] w-[320px] p-3 h-114.5 overflow-hidden transition-all duration-500 ease-in-out hover:h-137.5 shrink-0`}
     >
       <div className={`${card.glassStyle} rounded-2xl px-3 py-1`}>
         <h2 className={`relative z-10 text-xl ${card.titleColor} font-bold`}>
@@ -116,15 +54,15 @@ function MobileCard({
   expanded,
   onToggle,
 }: {
-  card: (typeof cards)[0];
+  card: Card;
   expanded: boolean;
   onToggle: () => void;
 }) {
   return (
     <div
       onClick={onToggle}
-      className={`${card.bgColor} rounded-3xl min-w-[287px] w-[287px] p-3 overflow-hidden transition-all duration-500 ease-in-out flex-shrink-0 cursor-pointer ${
-        expanded ? "h-[550px]" : "h-[458px]"
+      className={`${card.bgColor} rounded-3xl min-w-71.75 w-71.75 p-3 overflow-hidden transition-all duration-500 ease-in-out shrink-0 cursor-pointer ${
+        expanded ? "h-137.5" : "h-114.5"
       }`}
     >
       <div className={`${card.glassStyle} rounded-2xl px-3 py-1`}>
@@ -152,7 +90,19 @@ function MobileCard({
   );
 }
 
-export default function DoingToday() {
+interface DoingTodayProps {
+  headTitle?: string;
+  description?: string;
+  customCards?: Card[];
+  additionalTitle?: string;
+}
+
+export default function DoingToday({
+  headTitle,
+  description,
+  customCards,
+  additionalTitle,
+}: DoingTodayProps) {
   const [expandedCardId, setExpandedCardId] = useState<number | null>(null);
   const mobileCarouselRef = useRef<HTMLDivElement>(null);
 
@@ -180,11 +130,12 @@ export default function DoingToday() {
   return (
     <MaxWidthWrapper id="features" className="mt-16 md:mt-20 overflow-x-hidden">
       <h1 className="text-3xl text-center lg:text-left md:text-5xl lg:text-[58px] text-primary-text font-medium">
-        What <span className="text-primary">interests</span> you today?
+        {additionalTitle || "What you can"}{" "}
+        <span className="text-primary">{headTitle || "Explore"}</span> today?
       </h1>
       <p className="text-base md:text-xl lg:text-2xl text-secondary-text text-pretty text-center lg:text-left w-full mx-auto lg:mx-0 max-w-[85%] mt-2 mb-7">
-        SpinStrip is your go-to for discovering what to do, where to go, and who
-        to go with. Your lifestyle companion in one app.
+        {description ||
+          "SpinStrip is your go-to for discovering what to do, where to go, and who to go with. Your lifestyle companion in one app."}
       </p>
 
       {/* Mobile Carousel – tap to expand */}
@@ -193,7 +144,7 @@ export default function DoingToday() {
         className="carousel-container w-full lg:hidden"
       >
         <div className="carousel-track">
-          {cards.map((card) => (
+          {(customCards || EVERYONE_CARDS).map((card) => (
             <MobileCard
               key={`m-first-${card.id}`}
               card={card}
@@ -201,7 +152,7 @@ export default function DoingToday() {
               onToggle={() => handleToggle(card.id)}
             />
           ))}
-          {cards.map((card) => (
+          {(customCards || EVERYONE_CARDS).map((card) => (
             <MobileCard
               key={`m-second-${card.id}`}
               card={card}
@@ -215,10 +166,10 @@ export default function DoingToday() {
       {/* Desktop Carousel – hover to expand */}
       <div className="carousel-container w-full hidden lg:block">
         <div className="carousel-track">
-          {cards.map((card) => (
+          {(customCards || EVERYONE_CARDS).map((card) => (
             <DesktopCard key={`d-first-${card.id}`} card={card} />
           ))}
-          {cards.map((card) => (
+          {(customCards || EVERYONE_CARDS).map((card) => (
             <DesktopCard key={`d-second-${card.id}`} card={card} />
           ))}
         </div>
