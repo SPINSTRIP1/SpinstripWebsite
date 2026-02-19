@@ -9,8 +9,13 @@ import {
   PartyIcon,
   RestaurantIcon,
 } from "@hugeicons/core-free-icons";
+import { EVERYONE_WHO_WE_ARE_OPTIONS } from "@/constants";
 
-export default function WhoWeAre() {
+export default function WhoWeAre({
+  whoWeAreOptions,
+}: {
+  whoWeAreOptions?: string[];
+}) {
   const options = [
     {
       icon: Calendar02Icon,
@@ -78,28 +83,18 @@ export default function WhoWeAre() {
               </h2>
             </div>
           </div>
-        </div>{" "}
-        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
-          SpinStrip was born from a simple but powerful belief — that life
-          isn&apos;t meant to be scrolled past or lost in group chats that lead
-          nowhere. We believe experiences shouldn&apos;t be hard to find,
-          impossible to plan, or scattered across a dozen apps.
-        </p>
-        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
-          SpinStrip is your all-in-one lifestyle companion — a super app where
-          discovery, booking, payment, connection, and sharing come together.
-          Whether it&apos;s a food spot tucked away in your neighborhood, a
-          flash deal on that spa you love, or the perfect group getaway waiting
-          to be booked — SpinStrip makes it effortless to find, enjoy, and live
-          your best moments.
-        </p>
-        <p className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4">
-          We&apos;re not just here to list places. We&apos;re here to transform
-          how people experience the world around them — to turn ordinary days
-          into unforgettable stories, and local cities into global playgrounds
-          of possibility. Because life&apos;s better when you don&apos;t just
-          exist in a place — you live it.
-        </p>
+        </div>
+        {(whoWeAreOptions || EVERYONE_WHO_WE_ARE_OPTIONS).map(
+          (option, index) => (
+            <p
+              key={index}
+              className="md:text-2xl text-white lg:text-neutral-accent hover:text-white hover:scale-[1.04] origin-left duration-500 transition-all ease-linear lg:max-w-149.5 mt-4"
+            >
+              {option}
+            </p>
+          ),
+        )}
+
         <div className="flex gap-x-4 mt-4">
           <a href="#">
             <Image

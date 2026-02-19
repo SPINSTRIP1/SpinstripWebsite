@@ -1,19 +1,19 @@
+import ContactUs from "@/components/contact-us";
 import DoingToday from "@/components/doing-today";
-import Footer from "@/components/footer";
+import FAQ from "@/components/faq";
 import HeroPage from "@/components/hero-page";
-import MeetTheTeam from "@/components/meet-the-team";
-import Navbar from "@/components/navbar";
+import WhatUsersSays from "@/components/what-users-say";
 import WhoWeAre from "@/components/who-we-are";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <HeroPage />
       <DoingToday />
       <WhoWeAre />
-      <MeetTheTeam />
-      <Footer />
+      <WhatUsersSays />
+      <FAQ />
+      <ContactUs />
     </>
   );
 }

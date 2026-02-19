@@ -1,16 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#features", label: "Features" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "/", label: "Home" },
+    { href: "/business", label: "For Business" },
+    { href: "/creators", label: "For Creators" },
+    { href: "#features", label: "Resources" },
   ];
 
   const handleNavClick = (
@@ -37,7 +38,7 @@ export default function Navbar() {
     <nav className="w-full flex items-center justify-center fixed top-0 left-0 z-50 px-2 lg:px-4 pt-2">
       <div className="liquid-glass w-full max-w-296 mx-auto flex items-center justify-between rounded-3xl px-1 md:px-4 py-3 relative">
         {/* Logo */}
-        <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
+        <Link href="/">
           <Image
             src={"/logo.png"}
             className="w-28 lg:w-34.25 h-7 lg:h-10.5 object-contain"
@@ -45,19 +46,19 @@ export default function Navbar() {
             height={100}
             alt="Logo"
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-x-3 lg:gap-x-4">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
               className="hover:text-primary font-medium transition"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <button className="text-primary text-sm lg:text-base font-bold bg-primary-accent rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition">
             Join Waitlist
@@ -111,7 +112,7 @@ export default function Navbar() {
         >
           <div className="flex flex-col py-2 relative z-10">
             {navLinks.map((link, index) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
@@ -125,7 +126,7 @@ export default function Navbar() {
                 }}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
