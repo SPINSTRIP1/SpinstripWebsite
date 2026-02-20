@@ -45,8 +45,8 @@ export default function HeroPage({
       id="home"
       className="w-full flex rounded-b-4xl shadow items-center p-2 pt-27 pb-7 md:pt-40 lg:pb-20 justify-center"
     >
-      <MaxWidthWrapper className="flex flex-col  justify-center pb-5 lg:pb-40 items-center ">
-        <h1 className="text-5xl text-center text-primary  flex flex-col md:flex-row items-start gap-x-2 lg:text-[64px] font-medium">
+      <MaxWidthWrapper className="flex flex-col justify-center pb-5 lg:pb-40 items-center ">
+        <h1 className="text-5xl text-center text-primary  flex flex-col md:flex-row items-center md:items-start gap-x-2 lg:text-[64px] font-medium">
           Discover{" "}
           <span className="inline-block text-primary-text  overflow-hidden pb-2  mt-3 md:mt-0 align-bottom">
             <span

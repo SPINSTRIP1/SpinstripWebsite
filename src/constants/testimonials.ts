@@ -90,7 +90,7 @@ export const BUSINESS_TESTIMONIALS = [
     role: "Owner",
     image: "/testimonials/testimonial-11.png",
     quote:
-      "The Spinstrip analytic and inventory features have helped my business track and manage inventory, notifying us when to update the inventory. The analytic feature also gives sufficient insights, which we use to create targeted ads for the right customers.",
+      "The Spinstrip analytic and inventory features have helped my business track and manage inventory, notifying us when to update the inventory.",
   },
   {
     name: "Glow Unisex Saloon",
