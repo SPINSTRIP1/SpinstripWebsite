@@ -14,7 +14,7 @@ export const EVERYONE_TESTIMONIALS = [
       "Booking events is now effortless. I love how everything is in one app.",
   },
   {
-    name: "Nathan O.",
+    name: "Cynthia N.",
     role: "Marketing Manager",
     image: "/testimonials/testimonial-8.jpeg",
     quote: "I get great deals and never miss out on experiences.",

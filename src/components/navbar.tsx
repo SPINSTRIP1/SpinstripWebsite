@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -29,9 +31,9 @@ export default function Navbar() {
           top: elementPosition - navbarHeight,
           behavior: "smooth",
         });
-        setIsMenuOpen(false);
       }
     }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -55,7 +57,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="hover:text-primary font-medium transition"
+              className={`hover:text-primary transition ${pathname === link.href ? "text-primary font-bold" : "font-medium "}`}
             >
               {link.label}
             </Link>
@@ -117,6 +119,10 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={`px-6 py-3 hover:bg-white/10s transition-all duration-300 ${
+                  pathname === link.href
+                    ? "text-primary font-bold"
+                    : "font-medium "
+                } ${
                   isMenuOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-4"
