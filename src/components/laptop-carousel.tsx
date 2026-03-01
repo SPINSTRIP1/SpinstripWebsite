@@ -4,14 +4,14 @@ import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const SCREEN_IMAGES = [
-  "/merchant/1.png",
-  "/merchant/2.png",
   "/merchant/3.png",
   "/merchant/4.png",
   "/merchant/5.png",
+  "/merchant/2.png",
   "/merchant/6.png",
   "/merchant/7.png",
   "/merchant/8.png",
+  "/merchant/1.png",
 ];
 
 export default function LaptopCarousel() {
