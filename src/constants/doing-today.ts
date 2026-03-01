@@ -33,15 +33,15 @@ export const EVERYONE_CARDS: Card[] = [
     id: 3,
     title: "Personalised recommendation",
     description: `
-    Your interests shape your experience. Spinstrip curates a â€œFor Youâ€ feed based on where you go, what 
-    you love, and whatâ€™s trending around you, so discovery always feels personal.
+    Your interests shape your experience. Spinstrip curates a For You feed based on where you go, what 
+    you love, and what's trending around you, so discovery always feels personal.
     `,
-    image: "/29.png",
+    image: "/new/5.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
     textColor: "text-primary-accent/80",
-    imageHeight: "h-[87%]",
+    imageHeight: "h-[80%]",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const EVERYONE_CARDS: Card[] = [
     Create groups, plan outings, vote on options and coordinate 
     experiences together, all in one organised space designed for real-life moments.
     `,
-    image: "/11.png",
+    image: "/new/10.png",
     bgColor: "bg-primary-accent",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
@@ -92,12 +92,12 @@ export const EVERYONE_CARDS: Card[] = [
 See it. Love it. Book it. Reserve tables, secure tickets 
 or schedule services instantly without leaving the platform.
     `,
-    image: "/76.png",
+    image: "/new/11.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
     textColor: "text-primary-accent/80",
-    imageHeight: "h-[80%]",
+    imageHeight: "h-[94%]",
   },
   {
     id: 8,
@@ -116,32 +116,32 @@ or schedule services instantly without leaving the platform.
 ];
 
 export const CREATORS_CARDS: Card[] = [
-  {
-    id: 1,
-    title: "Verification badge",
-    description: `
- Stand out with a verified Creator badge that builds trust and credibility. 
- Let brands and audiences know your profile is authentic and partnership-ready. `,
-    image: "/58.png",
-    bgColor: "bg-primary-accent",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
-  },
-  {
-    id: 2,
-    title: "Performance Analytics",
-    description: `
- Track your influence in real time. Monitor engagement, clicks, reach and booking impact through a detailed analytics dashboard built to measure what truly matters.
-    `,
-    image: "/79.png",
-    bgColor: "bg-foreground",
-    glassStyle: "card-glass",
-    titleColor: "text-primary-text",
-    textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
-  },
+  //   {
+  //     id: 1,
+  //     title: "Verification badge",
+  //     description: `
+  //  Stand out with a verified Creator badge that builds trust and credibility.
+  //  Let brands and audiences know your profile is authentic and partnership-ready. `,
+  //     image: "/58.png",
+  //     bgColor: "bg-primary-accent",
+  //     glassStyle: "card-glass",
+  //     titleColor: "text-primary-text",
+  //     textColor: "text-secondary-text",
+  //     imageHeight: "h-[80%]",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Performance Analytics",
+  //     description: `
+  //  Track your influence in real time. Monitor engagement, clicks, reach and booking impact through a detailed analytics dashboard built to measure what truly matters.
+  //     `,
+  //     image: "/79.png",
+  //     bgColor: "bg-foreground",
+  //     glassStyle: "card-glass",
+  //     titleColor: "text-primary-text",
+  //     textColor: "text-secondary-text",
+  //     imageHeight: "h-[80%]",
+  //   },
   {
     id: 3,
     title: "Community growth",
@@ -161,7 +161,7 @@ Partner directly with businesses and participate in curated campaigns. Spinstrip
     description: `
     Turn your profile into a lifestyle hub. Showcase places you visit, trips you make, events you attend, brands you love, all connected to real-world discovery.
     `,
-    image: "/11.png",
+    image: "/new/3.png",
     bgColor: "bg-primary-accent",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
@@ -173,12 +173,12 @@ Partner directly with businesses and participate in curated campaigns. Spinstrip
     title: "Go live ",
     description: `
   Host live from events, venues, or any place. Engage your audience in real time and amplify the moment as it happens.`,
-    image: "/79.png",
+    image: "/new/2.png",
     bgColor: "bg-foreground",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
     textColor: "text-secondary-text",
-    imageHeight: "h-[80%]",
+    imageHeight: "h-[88%]",
   },
   {
     id: 6,
@@ -186,12 +186,12 @@ Partner directly with businesses and participate in curated campaigns. Spinstrip
     description: `
 Earn from your influence. Receive commissions for bookings, deals, or purchase-driven through your content and personalised links.
     `,
-    image: "/76.png",
+    image: "/new/14.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
     textColor: "text-primary-accent/80",
-    imageHeight: "h-[80%]",
+    imageHeight: "h-[88%]",
   },
   {
     id: 7,
@@ -199,36 +199,36 @@ Earn from your influence. Receive commissions for bookings, deals, or purchase-d
     description: `
 Create exclusive groups for your audience, from VIP communities to interest-based circles, and foster deeper, more intentional engagement.
     `,
-    image: "/76.png",
-    bgColor: "bg-[#9E76F8]",
-    glassStyle: "card-glass-purple",
-    titleColor: "text-primary-accent",
-    textColor: "text-primary-accent/80",
-    imageHeight: "h-[80%]",
-  },
-];
-
-export const BUSINESS_CARDS: Card[] = [
-  {
-    id: 1,
-    title: "Business Listing",
-    description: `
-    Showcase your products, services, menus and experiences through a professional Merchant dashboard designed for visibility and conversion.
-    `,
-    image: "/58.png",
+    image: "/new/10.png",
     bgColor: "bg-primary-accent",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
     textColor: "text-secondary-text",
     imageHeight: "h-[80%]",
   },
+];
+
+export const BUSINESS_CARDS: Card[] = [
+  // {
+  //   id: 1,
+  //   title: "Business Listing",
+  //   description: `
+  //   Showcase your products, services, menus and experiences through a professional Merchant dashboard designed for visibility and conversion.
+  //   `,
+  //   image: "/merchant/1.png",
+  //   bgColor: "bg-primary-accent",
+  //   glassStyle: "card-glass",
+  //   titleColor: "text-primary-text",
+  //   textColor: "text-secondary-text",
+  //   imageHeight: "h-[80%]",
+  // },
   {
     id: 2,
     title: "Secure Payments",
     description: `
     Accept bookings, reservations and product purchases with integrated, secure payment processing, simplifying transactions for both you and your customers.
     `,
-    image: "/79.png",
+    image: "/merchant/2.png",
     bgColor: "bg-foreground",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
@@ -241,7 +241,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Host events and sell tickets directly through Spinstrip. Manage capacity, pricing, and attendee lists all in one streamlined system.
     `,
-    image: "/29.png",
+    image: "/merchant/3.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
@@ -254,7 +254,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Create flash sales, exclusive offers, and seasonal promotions to attract new customers and drive repeat visits.
     `,
-    image: "/11.png",
+    image: "/merchant/5.png",
     bgColor: "bg-primary-accent",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
@@ -267,7 +267,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Access real-time data on bookings, customer behaviour, and revenue performance. Make informed decisions backed by actionable insights.
     `,
-    image: "/79.png",
+    image: "/merchant/4.png",
     bgColor: "bg-foreground",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
@@ -280,7 +280,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Partner with verified creators to promote your business to targeted audiences. Launch campaigns that convert visibility into measurable results.
     `,
-    image: "/76.png",
+    image: "/merchant/7.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
@@ -293,7 +293,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Enable customers to book tables, schedule services, or reserve experiences instantly, reducing friction and increasing confirmed visits.
     `,
-    image: "/76.png",
+    image: "/merchant/3.png",
     bgColor: "bg-[#9E76F8]",
     glassStyle: "card-glass-purple",
     titleColor: "text-primary-accent",
@@ -306,7 +306,7 @@ export const BUSINESS_CARDS: Card[] = [
     description: `
     Manage product availability, service slots and event capacity efficiently through your Merchant dashboard, keeping operations organised and scalable.
     `,
-    image: "/56.png",
+    image: "/merchant/8.png",
     bgColor: "bg-foreground",
     glassStyle: "card-glass",
     titleColor: "text-primary-text",
