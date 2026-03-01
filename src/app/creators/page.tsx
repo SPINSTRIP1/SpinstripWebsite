@@ -16,6 +16,13 @@ export default function Creators() {
     <>
       <HeroPage
         titles={CREATORS_TITLES}
+        images={[
+          "/new/2.png",
+          "/new/3.png",
+          "/new/4.png",
+          "/hero-1.png",
+          "/new/9.png",
+        ]}
         description="Explore emerging hotspots, grow inspiring communities, and spotlight experiences your audience is ready to discover, all in one platform."
       />
       <DoingToday

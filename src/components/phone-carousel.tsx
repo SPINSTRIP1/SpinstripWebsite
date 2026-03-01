@@ -56,7 +56,7 @@ const ROTATION_ORDERS = [
   [0, 4, 1, 3, 2], // image 1 in center
 ];
 
-export default function PhoneCarousel() {
+export default function PhoneCarousel({ images }: { images?: string[] }) {
   const [phase, setPhase] = useState<"grouped" | "spread" | "carousel">(
     "grouped",
   );
@@ -122,7 +122,7 @@ export default function PhoneCarousel() {
 
   return (
     <div className="relative w-full flex items-center justify-center h-52 md:h-108.75">
-      {PHONE_IMAGES.map((src, imageIdx) => (
+      {(images || PHONE_IMAGES).map((src, imageIdx) => (
         <div key={imageIdx} className="absolute" style={getStyle(imageIdx)}>
           <Image
             src={src}

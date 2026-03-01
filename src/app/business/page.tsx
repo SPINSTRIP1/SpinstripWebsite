@@ -1,6 +1,5 @@
 import ContactUs from "@/components/contact-us";
-import DoingToday from "@/components/doing-today";
-import HeroPage from "@/components/hero-page";
+import DoingTodayDesktop from "@/components/doing-today-desktop";
 import WhatUsersSays from "@/components/what-users-say";
 import WhoWeAre from "@/components/who-we-are";
 import {
@@ -10,6 +9,7 @@ import {
   BUSINESS_WHO_WE_ARE_OPTIONS,
 } from "@/constants";
 import React from "react";
+import HeroPage from "./_components/hero";
 
 export default function Business() {
   return (
@@ -18,7 +18,7 @@ export default function Business() {
         titles={BUSINESS_TITLES}
         description="Showcase your brand to customers ready to actively explore, decide, book, and pay all within one seamless ecosystem."
       />
-      <DoingToday
+      <DoingTodayDesktop
         customCards={BUSINESS_CARDS}
         additionalTitle="What your customers can"
         headTitle="Discover"

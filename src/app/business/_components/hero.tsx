@@ -1,17 +1,15 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
-import MaxWidthWrapper from "./max-width-wrapper";
-import PhoneCarousel from "./phone-carousel";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
+import LaptopCarousel from "@/components/laptop-carousel";
 
 export default function HeroPage({
   titles,
   description,
-  images,
 }: {
   titles?: string[];
   description?: string;
-  images?: string[];
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -47,7 +45,7 @@ export default function HeroPage({
       id="home"
       className="w-full flex rounded-b-4xl shadow items-center p-2 pt-27 pb-7 md:pt-40 lg:pb-20 justify-center"
     >
-      <MaxWidthWrapper className="flex flex-col justify-center pb-5 lg:pb-40 items-center ">
+      <MaxWidthWrapper className="flex flex-col justify-center pb-5 lg:pb-20 items-center ">
         <h1 className="text-5xl text-center text-primary  flex flex-col md:flex-row items-center md:items-start gap-x-2 lg:text-[64px] font-medium">
           Discover{" "}
           <span className="inline-block text-primary-text  overflow-hidden pb-2  mt-3 md:mt-0 align-bottom">
@@ -70,8 +68,8 @@ export default function HeroPage({
           vendors, and dive into unforgettable experiences, all in one platform.
   `}
           </p>
-          <PhoneCarousel images={images} />
         </div>
+        <LaptopCarousel />
       </MaxWidthWrapper>
     </section>
   );
