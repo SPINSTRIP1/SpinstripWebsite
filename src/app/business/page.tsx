@@ -10,6 +10,8 @@ import {
 } from "@/constants";
 import React from "react";
 import HeroPage from "./_components/hero";
+import FAQ from "@/components/faq";
+import { BUSINESS_FAQS } from "@/constants/faq";
 
 export default function Business() {
   return (
@@ -30,6 +32,7 @@ export default function Business() {
         description="Don’t just take our word for it, hear from Businesses who use Spinstrip to level up their lifestyles every day."
         customTestimonials={BUSINESS_TESTIMONIALS}
       />
+      <FAQ customFaqs={BUSINESS_FAQS} />
       <ContactUs
         title="Get early access to what's next"
         description="Be among the first to Explore, curate and inspire directly from your influence. Stay ahead. Shape trends. Move audiences.
