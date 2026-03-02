@@ -72,7 +72,7 @@ The app is available for download on IOS via App Store and Android on Playstore.
 `,
   },
   {
-    question: "What does Spinstrip offer Creators??",
+    question: "What does Spinstrip offer Creators?",
     answer: `Spinstrip gives creators tools to amplify their influence by turning 
     their content into discovery experiences that drive engagements.`,
   },
@@ -140,29 +140,24 @@ The app is available for download on IOS via App Store and Android on Playstore.
 `,
   },
   {
-    question: "What does Spinstrip offer Creators??",
-    answer: `Spinstrip gives creators tools to amplify their influence by turning 
-    their content into discovery experiences that drive engagements.`,
+    question: "Is there a business listing fee?",
+    answer: `No. Listing your business on Spinstrip is free. However, using some apps and tools for your business requires a fee.`,
   },
   {
-    question: "Can I earn from content in Spinstrip?",
-    answer: `Yes. Creators can get gifting and also partner with Spinstrip for promotions 
-    and earn based on engagement or bookings linked to their content`,
+    question: "How do I get bookings through Spinstrip?",
+    answer: `Customers discover your business through search, curated recommendations, promotions and targeted marketing, then they book and pay directly on the platform. `,
   },
   {
-    question: "How do I showcase experiences on Spinstrip?",
-    answer: `You can go live, post stories, 
-    reels, and recommendations about places, events and lifestyle directly`,
+    question: "Can I offer deals and discounts?",
+    answer: `Yes. Businesses can create flash deals, seasonal offers and special promotions to attract more sales and bookings. `,
   },
   {
-    question: "Is there a Verification process for Creators?",
-    answer: `Yes. To build trust with audiences and businesses, creators 
-    can verify their profiles before participating in certain campaigns. `,
+    question: "Is payment secure on Spinstrip?",
+    answer: `Absolutely. All payments are handled securely through the app with trusted payment providers to protect your data. `,
   },
   {
-    question: "Does Spinstrip support paid collaborations?",
-    answer: `Absolutely. We connect creators with brands and businesses for sponsored 
-    content opportunities that match their style and audiences.  `,
+    question: "How do I receive payouts?",
+    answer: `Payouts are handled securely via integrated payment systems. Payments go straight to your Spinstrip business wallet and can be withdrawn to your bank account.  `,
   },
 
   {
@@ -172,23 +167,15 @@ The app is available for download on IOS via App Store and Android on Playstore.
 `,
   },
   {
-    question: "Can I track my Impact?",
-    answer: `Yes. You can get performance insights that show you engagement, clicks, likes, and conversions from your content. `,
+    question: "Can Customers drop reviews and ratings for my business?",
+    answer: `Yes. Customers can leave reviews and ratings after their experience.`,
   },
   {
-    question: "Are there Exclusive Creator Events?",
-    answer: `Yes. SpinStrip regularly partners with creators for events, features, and launch campaigns.
+    question: "How do I get Analytics for my Business?",
+    answer: `Spinstrip provides performance data on bookings, customer trends, peak times and visibility metrics..
 `,
   },
-  {
-    question: "Is there a minimum audience size?",
-    answer: `No. You can have as many followers, but to join certain campaigns may have specific requirements.`,
-  },
-  {
-    question: "How do I join influencer campaigns?",
-    answer: `Complete the creator partnership form, and our
-     team will reach out with opportunities that match your profile..`,
-  },
+
   {
     question: "How do I contact support?",
     answer: `You can reach our support team via email support@spinstrip.com. We typically respond within 24hours`,

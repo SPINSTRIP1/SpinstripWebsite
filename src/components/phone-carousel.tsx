@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const PHONE_IMAGES = [
   "/hero-1.png",
-  "/hero-2.png",
+  "/29.png",
   "/hero-3.png",
   "/hero-4.png",
   "/hero-5.png",
