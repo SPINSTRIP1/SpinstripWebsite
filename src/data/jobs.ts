@@ -45,9 +45,9 @@ export const jobs: JobRole[] = [
   {
     "slug": "visual-creator",
     "title": "Visual Creator",
-    "location": "Lagos",
+    "location": "Remote",
     "employmentType": "Full-time",
-    "workArrangement": "On-site",
+    "workArrangement": "Remote",
     "experience": "2+ years",
     "summary": "The Visual Creator will be responsible for developing compelling visual assets that communicate the company's brand, campaigns, services and ideas across digital channels.\n\nThe role requires someone who can take a brief and turn it into clear, visually strong and platform-appropriate creative work.",
     "responsibilities": [

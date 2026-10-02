@@ -62,6 +62,5 @@ JobPosting JSON-LD is enabled only when a role has its actual `datePosted`
 not provided in the brief. Salary is omitted. See Google's requirements:
 https://developers.google.com/search/docs/appearance/structured-data/job-posting
 
-Content review: Visual Creator is listed as Lagos/on-site in the supplied brief,
-but requirements mention remote work and equipment. Confirm and update the data
-before publishing if needed.
+Visual Creator and Digital Marketer / Growth Marketer are remote roles.
+Content Creator is the only on-site role, based in Lagos.
