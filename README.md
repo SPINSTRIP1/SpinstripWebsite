@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Careers
+
+Manage vacancies in `src/data/jobs.ts`. Add one `JobRole` object to create a card,
+route, metadata and application links. Set `isOpen: false` to hide the card and
+retain a closed page (no application links, no JobPosting, and noindex). Redeploy
+after editing role data; these pages are generated at build time.
+
+The default application URL is the existing Google Form; individual roles can
+override `applicationUrl`. The form opens in a new tab. No submission handling or
+Google Forms storage has been changed. Candidates are reminded to identify their
+role; embedding and prefilled field IDs have not been verified. Google Form
+submission and form-view events cannot be observed from this site.
+
+Recruitment events are pushed to `window.dataLayer` and also emitted as a
+`recruitment` CustomEvent: `careers_page_viewed`, `role_viewed`, and
+`apply_button_clicked`. Role events include `role_slug`. There is no installed
+analytics collector. Configure Google Tag Manager custom event triggers and an
+analytics destination to persist events and report role views versus apply clicks.
+No applicant details are collected by these events.
+
+JobPosting JSON-LD is enabled only when a role has its actual `datePosted`
+(ISO date) and either `locationCountry` (on-site) or `applicantCountries`
+(remote). Supply verified values; publication dates and remote eligibility were
+not provided in the brief. Salary is omitted. See Google's requirements:
+https://developers.google.com/search/docs/appearance/structured-data/job-posting
+
+Content review: Visual Creator is listed as Lagos/on-site in the supplied brief,
+but requirements mention remote work and equipment. Confirm and update the data
+before publishing if needed.

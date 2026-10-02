@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "./max-width-wrapper";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -93,6 +94,7 @@ export default function Footer() {
                 Quicklinks
               </h4>
               <ul className="space-y-3">
+                <li><Link href="/careers" className="text-white md:text-neutral-accent hover:text-white transition">Careers</Link></li>
                 <li>
                   <a
                     href="#"

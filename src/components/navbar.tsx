@@ -14,6 +14,7 @@ export default function Navbar() {
     { href: "/business", label: "For Business" },
     { href: "/creators", label: "For Creators" },
     { href: "#features", label: "Resources" },
+    { href: "/careers", label: "Careers" },
   ];
 
   const handleNavClick = (
@@ -57,7 +58,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className={`hover:text-primary transition ${pathname === link.href ? "text-primary font-bold" : "font-medium "}`}
+              className={`hover:text-primary transition ${(pathname === link.href || (link.href === "/careers" && pathname.startsWith("/careers/"))) ? "text-primary font-bold" : "font-medium "}`}
             >
               {link.label}
             </Link>
@@ -119,7 +120,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={`px-6 py-3 hover:bg-white/10s transition-all duration-300 ${
-                  pathname === link.href
+                  (pathname === link.href || (link.href === "/careers" && pathname.startsWith("/careers/")))
                     ? "text-primary font-bold"
                     : "font-medium "
                 } ${
