@@ -9,6 +9,7 @@ export const ROLE_SECTIONS = [
   ["overview", "Role Overview"],
   ["responsibilities", "Key Responsibilities"],
   ["requirements", "Requirements"],
+  ["what-we-are-looking-for", "What We Are Looking For"],
   ["proof-of-work", "Proof of Work"],
   ["apply", "Apply for this role"],
 ];
@@ -160,9 +161,19 @@ export function JobDetails({ job }: { job: JobRole }) {
           </ol>
         </section>
       ))}
+      {!!job.whatWeAreLookingFor?.length && (
+        <section id="what-we-are-looking-for" data-careers-reveal>
+          <p className="careers-section-number">05 / THE RIGHT FIT</p>
+          <h2 className="careers-section-heading">What We Are Looking For</h2>
+          <p>We are looking for people who:</p>
+          <ul className="list-disc space-y-3 pl-6 mt-4">
+            {job.whatWeAreLookingFor.map(item => <li key={item}>{item}</li>)}
+          </ul>
+        </section>
+      )}
       {job.proofOfWork && (
         <section id="proof-of-work" data-careers-reveal>
-          <p className="careers-section-number">05 / SHOW YOUR CRAFT</p>
+          <p className="careers-section-number">{job.whatWeAreLookingFor?.length ? "06" : "05"} / SHOW YOUR CRAFT</p>
           <h2 className="careers-section-heading">Proof of Work</h2>
           <div className="space-y-4">
             {job.proofOfWork.split("\n\n").map((paragraph, index) =>
@@ -190,7 +201,7 @@ export function RoleContents({ job }: { job: JobRole }) {
         <p className="careers-eyebrow">IN THIS ROLE</p>
         <ol>
           {ROLE_SECTIONS.filter(
-            ([id]) => id !== "proof-of-work" || job.proofOfWork,
+            ([id]) => (id !== "proof-of-work" || job.proofOfWork) && (id !== "what-we-are-looking-for" || job.whatWeAreLookingFor?.length),
           ).map(([id, title], index) => (
             <li key={id}>
               <a href={`#${id}`}>
@@ -242,6 +253,7 @@ export function ApplicationCTA({ job }: { job: JobRole }) {
         Complete our application form and select or identify {job.title} as the
         role you are applying for. Have your CV and proof of work ready.
       </p>
+      {job.applicationInstructions && <p className="careers-application-copy">{job.applicationInstructions}</p>}
       <ApplyLink url={job.applicationUrl} roleSlug={job.slug} />
       <p className="careers-application-note">
         Opens Google Forms in a new tab.

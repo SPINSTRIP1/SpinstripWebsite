@@ -126,6 +126,59 @@ export const jobs: JobRole[] = [
     "proofOfWork": "Candidates must provide evidence of previous campaigns or growth work they personally executed. Where possible, candidates should provide the campaign objective, their specific role, platform used, budget range, results, acquisition/conversion metrics, and what they changed or optimised. Confidential client information may be anonymised.",
     "applicationUrl": APPLICATION_FORM_URL,
     "isOpen": true
+  },
+  {
+    "slug": "merchant-acquisition-executive",
+    "title": "Merchant Acquisition Executive",
+    "location": "Lagos, Abuja, Port Harcourt, Ibadan, Asaba, Warri & Benin",
+    "employmentType": "Full-time",
+    "workArrangement": "On-site / Field-Based",
+    "experience": "1–3 years",
+    "summary": "We are looking for proactive and target-driven Merchant Acquisition Executives to identify, approach and onboard businesses onto our platform.\n\nThis is a field-based sales and business development role. You will be responsible for prospecting businesses within your assigned territory, engaging business owners and decision-makers, presenting our solutions, handling objections, closing opportunities and ensuring newly acquired merchants are successfully onboarded.\n\nYou should be comfortable working independently, meeting business owners face-to-face and taking ownership of your acquisition targets.",
+    "responsibilities": [
+      "Identify and prospect potential business customers within your assigned territory.",
+      "Visit businesses physically and introduce our solutions to owners, managers and decision-makers.",
+      "Build and maintain a pipeline of prospective merchants.",
+      "Explain our solutions clearly and demonstrate how they work.",
+      "Handle questions and objections from prospective customers.",
+      "Convert qualified prospects into paying merchants.",
+      "Complete the merchant onboarding process accurately and efficiently.",
+      "Ensure newly onboarded merchants are properly set up and ready to use the platform.",
+      "Follow up with merchants after onboarding to encourage adoption and resolve initial issues.",
+      "Maintain accurate records of prospects, conversations, follow-ups and conversions.",
+      "Work towards weekly and monthly acquisition targets.",
+      "Build strong relationships with merchants within your assigned territory.",
+      "Gather feedback from merchants and share useful insights with the wider team.",
+      "Work closely with the growth and operations teams on acquisition campaigns and initiatives."
+    ],
+    "requirements": [
+      "1–3 years of experience in sales, business development, field marketing, merchant acquisition or a related role.",
+      "Strong communication and interpersonal skills.",
+      "Comfortable approaching and speaking with business owners and decision-makers.",
+      "Demonstrated ability to sell, acquire customers or generate leads.",
+      "Comfortable working in a field-based environment.",
+      "Strong negotiation and objection-handling skills.",
+      "Good follow-up and relationship-management skills.",
+      "Target-driven and self-motivated.",
+      "Comfortable using smartphones and basic digital tools.",
+      "Able to learn and demonstrate technology products quickly.",
+      "Organised and able to maintain accurate customer and prospect records.",
+      "Must be based in, or able to work consistently within, one of our operating locations: Lagos, Abuja, Port Harcourt, Ibadan, Asaba, Warri or Benin."
+    ],
+    "whatWeAreLookingFor": [
+      "Are comfortable starting conversations with businesses.",
+      "Can confidently approach business owners and decision-makers.",
+      "Understand that good sales starts with understanding the customer's needs.",
+      "Can explain technology in simple, practical language.",
+      "Are comfortable with rejection and persistent prospecting.",
+      "Take ownership of their targets and pipeline.",
+      "Pay attention to what happens after the sale, not just the sale itself.",
+      "Can work independently while remaining accountable to the wider team."
+    ],
+    "proofOfWork": "Candidates should provide evidence of previous sales, business development or customer acquisition experience.\n\nWhere applicable, include:\n\n- The type of customers or businesses you acquired.\n- Your previous sales or acquisition targets.\n- Examples of customers you personally acquired.\n- Conversion or revenue results where available.\n- The sales or prospecting approach you used.\n- Your specific contribution where results were achieved as part of a team.",
+    "applicationInstructions": "Preferred Location: Select your preferred operating location in the application form.",
+    "applicationUrl": APPLICATION_FORM_URL,
+    "isOpen": true
   }
 ];
 

@@ -9,6 +9,8 @@ export type JobRole = {
   responsibilities: string[];
   requirements: string[];
   proofOfWork?: string;
+  whatWeAreLookingFor?: string[];
+  applicationInstructions?: string;
   applicationUrl: string;
   isOpen: boolean;
   // Supply the actual publication date and eligible location to enable JobPosting.

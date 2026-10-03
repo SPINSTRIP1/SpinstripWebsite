@@ -15,7 +15,7 @@ export function JobStructuredData({ job }: { job: JobRole }) {
     identifier: { "@type": "PropertyValue", name: "SpinStrip", value: job.slug },
     hiringOrganization: { "@type": "Organization", name: "SpinStrip", sameAs: "https://www.spinstrip.com", logo: "https://www.spinstrip.com/logo.png" },
     ...(job.employmentType === "Full-time" ? { employmentType: "FULL_TIME" } : {}),
-    description: `<h2>About the Company</h2>${paragraphs(COMPANY_DESCRIPTION)}<h2>Role Overview</h2>${paragraphs(job.summary)}<h2>Key Responsibilities</h2>${list(job.responsibilities)}<h2>Requirements</h2>${list(job.requirements)}${job.proofOfWork ? `<h2>Proof of Work</h2>${paragraphs(job.proofOfWork)}` : ""}`,
+    description: `<h2>About the Company</h2>${paragraphs(COMPANY_DESCRIPTION)}<h2>Role Overview</h2>${paragraphs(job.summary)}<h2>Key Responsibilities</h2>${list(job.responsibilities)}<h2>Requirements</h2>${list(job.requirements)}${job.whatWeAreLookingFor?.length ? `<h2>What We Are Looking For</h2><p>We are looking for people who:</p>${list(job.whatWeAreLookingFor)}` : ""}${job.proofOfWork ? `<h2>Proof of Work</h2>${paragraphs(job.proofOfWork)}` : ""}`,
     experienceRequirements: job.experience,
     ...(remote ? { jobLocationType: "TELECOMMUTE", applicantLocationRequirements: job.applicantCountries!.map(name => ({ "@type": "Country", name })) } : { jobLocation: { "@type": "Place", address: { "@type": "PostalAddress", addressLocality: job.location, addressCountry: job.locationCountry } } }),
   };

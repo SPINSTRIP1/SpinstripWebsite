@@ -63,4 +63,5 @@ not provided in the brief. Salary is omitted. See Google's requirements:
 https://developers.google.com/search/docs/appearance/structured-data/job-posting
 
 Visual Creator and Digital Marketer / Growth Marketer are remote roles.
-Content Creator is the only on-site role, based in Lagos.
+Content Creator is on-site in Lagos. Merchant Acquisition Executive is on-site /
+field-based across Lagos, Abuja, Port Harcourt, Ibadan, Asaba, Warri and Benin.
